@@ -2,7 +2,8 @@
 
 ## 📋 Project Overview
 
-**Shopping API** is a RESTful API built with Node.js, Express, and MongoDB. It provides endpoints for managing products in an e-commerce system with authentication middleware and a service-oriented architecture.
+**Shopping API** is a RESTful API built with Node.js, Express, and MongoDB.
+It provides endpoints for managing products in an e-commerce system with authentication middleware and a service-oriented architecture.
 
 **Node.js Version:** 24.13.1
 

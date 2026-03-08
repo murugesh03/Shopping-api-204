@@ -240,3 +240,10 @@ npm start
 # Run tests (when configured)
 npm test
 ````
+
+//POST, UPDATE, DELETE, GET, PATCH
+
+GET - It is use fetch the information by default GET
+POST - It you want to create a new information or want to update any information we can use POST
+DELETE - If you want to delete a sepcific info
+PATCH - update the info alone

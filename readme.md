@@ -247,3 +247,24 @@ GET - It is use fetch the information by default GET
 POST - It you want to create a new information or want to update any information we can use POST
 DELETE - If you want to delete a sepcific info
 PATCH - update the info alone
+
+HTTP status code categories
+
+1xx - information
+2xx - success
+3xx - Redirection
+4xx - client error (client side browser or front end)
+5xx - server error (backend server)
+
+Common status code followed in industry
+
+200 - GET success
+201 - Resources created
+204 - Resources deleted
+400 - Bad Request
+401 - Unauthorized
+403 - Forbidden
+404 - Not found
+409 - conflict
+422 - Validation error
+500 - Server error

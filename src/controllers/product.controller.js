@@ -1,5 +1,5 @@
 const productService = require("../services/product.service");
-
+const mongoose = require("mongoose");
 exports.getAllProducts = async (req, res) => {
   const products = await productService.getAllProducts(req.query);
   res.json(products);
@@ -32,8 +32,27 @@ exports.deleteProduct = async (req, res) => {
   }
 };
 
-exports.getByProductId = async (req, res) => {
-  console.log(req.params.id);
-  const product = await productService.getByProductId(req.params.id);
-  res.json(product);
+exports.getByProductId = async (req, res, next) => {
+  try {
+    console.log(req.params.id);
+
+    const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      const error = new Error("Invalid product ID");
+      error.statusCode = 400;
+      throw error;
+    }
+
+    const product = await productService.getByProductId(id);
+    if (!product) {
+      const error = new Error("Product not found");
+      error.statusCode = 404;
+      throw error;
+    }
+
+    res.json(product);
+  } catch (error) {
+    next(error);
+  }
 };

@@ -1,0 +1,5 @@
+{"level":"info","message":{"method":"GET","requestId":"6ad91d02-7b8e-43d1-aea4-9fe4ca344707","url":"/product?category=furniture,groceries&sort=price"},"timestamp":"2026-03-14T06:26:34.850Z"}
+{"level":"info","message":{"method":"GET","requestId":"2ee94d99-b34f-462c-abe7-12841bbff62a","url":"/product"},"timestamp":"2026-03-14T06:27:45.339Z"}
+{"level":"info","message":{"method":"GET","requestId":"3428f1d2-53f3-4a16-be6a-0f68dc4d40fc","url":"/product/error"},"timestamp":"2026-03-14T06:33:30.706Z"}
+{"level":"error","message":"Internal server error for /error","requestId":"3428f1d2-53f3-4a16-be6a-0f68dc4d40fc","timestamp":"2026-03-14T06:33:30.722Z"}
+{"level":"info","message":{"method":"GET","requestId":"9f015ff0-38b7-4289-8955-fa5bbdbb8bc0","url":"/product/69acff773e4f43d8186af1b"},"timestamp":"2026-03-14T06:35:19.858Z"}

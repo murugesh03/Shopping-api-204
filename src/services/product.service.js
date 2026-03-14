@@ -3,12 +3,17 @@ const Product = require("../models/product.model");
 exports.getAllProducts = async (query) => {
   const { page = 1, limit = 5, sort, category } = query;
   console.log(query);
+  ("furniture,groceries");
   const filters = {};
   if (category) {
     const categoryFilter = category.split(",");
+    console.log(categoryFilter);
     filters.category = { $in: categoryFilter };
   }
-
+  if (page) {
+  }
+  if (limit) {
+  }
   let productQuery = Product.find(filters);
 
   if (sort) {

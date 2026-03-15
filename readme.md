@@ -268,3 +268,7 @@ Common status code followed in industry
 409 - conflict
 422 - Validation error
 500 - Server error
+
+Super Admin (Product owner)
+
+Registered User - Admin/ User

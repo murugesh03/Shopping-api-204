@@ -4,7 +4,7 @@ const productRoutes = require("./routes/product.routes");
 const auth = require("./middleware/auth.middleware");
 const errorHandler = require("./middleware/error.middleware");
 const requestLogger = require("./middleware/requestLogger.middleware");
-
+const authRoutes = require("./routes/auth.routes");
 const app = express();
 
 app.use(cors());
@@ -12,8 +12,8 @@ app.use(cors());
 app.use(express.json());
 // middleware
 app.use(requestLogger);
+app.use("/auth", authRoutes);
 app.use(auth);
-
 // routes
 app.use("/product", productRoutes);
 

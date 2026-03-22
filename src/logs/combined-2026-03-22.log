@@ -1,0 +1,39 @@
+{"level":"info","message":{"method":"POST","requestId":"527a2791-d00e-46ab-bccf-b102fd458801","url":"/%7Dauth/login"},"timestamp":"2026-03-22T05:29:56.146Z"}
+{"level":"info","message":{"method":"POST","requestId":"80bb4c0b-93a5-4e3c-b12b-e281caba936e","url":"/%7Dauth/login"},"timestamp":"2026-03-22T05:29:58.632Z"}
+{"level":"info","message":{"method":"POST","requestId":"caab291d-2a44-4ed3-bd73-0388e2a7e43b","url":"/%7Dauth/login"},"timestamp":"2026-03-22T05:30:03.381Z"}
+{"level":"info","message":{"method":"POST","requestId":"1fefb355-d2c4-4915-891d-9f97ee9ab41a","url":"/auth/login"},"timestamp":"2026-03-22T05:30:29.543Z"}
+{"level":"info","message":{"method":"POST","requestId":"a2db6455-f790-4a95-a815-2edf3d93d8d3","url":"/product/"},"timestamp":"2026-03-22T05:46:33.117Z"}
+{"level":"info","message":{"method":"POST","requestId":"6bdf659c-8834-44c5-9cf0-cbcd740ae036","url":"/product/"},"timestamp":"2026-03-22T05:46:51.188Z"}
+{"level":"info","message":{"method":"POST","requestId":"552cf9d5-b900-4619-872e-1de6bb2746b7","url":"/product/"},"timestamp":"2026-03-22T05:46:53.110Z"}
+{"level":"info","message":{"method":"POST","requestId":"cf2e482e-1b5c-4ea2-bd05-5bc834c7ad62","url":"/auth/refresh-token?refereshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWI2NGM2NTRiZThhYTY2Yzg3YThlOTkiLCJlbWFpbCI6InRlc3QxMjNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NzQxNTc0MjksImV4cCI6MTc3NDc2MjIyOX0.4jDppjjh9jvuVYIhTI8veveyLWBIw3YHiJAalrVL41c"},"timestamp":"2026-03-22T05:49:00.247Z"}
+{"level":"error","message":"Refresh token is required","requestId":"cf2e482e-1b5c-4ea2-bd05-5bc834c7ad62","timestamp":"2026-03-22T05:49:00.253Z"}
+{"level":"info","message":{"method":"POST","requestId":"d7861a2a-a0ea-4bec-8dfa-92bb6e0e31b1","url":"/auth/refresh-token?refereshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWI2NGM2NTRiZThhYTY2Yzg3YThlOTkiLCJlbWFpbCI6InRlc3QxMjNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NzQxNTc0MjksImV4cCI6MTc3NDc2MjIyOX0.4jDppjjh9jvuVYIhTI8veveyLWBIw3YHiJAalrVL41c"},"timestamp":"2026-03-22T05:49:24.245Z"}
+{"level":"error","message":"Refresh token is required","requestId":"d7861a2a-a0ea-4bec-8dfa-92bb6e0e31b1","timestamp":"2026-03-22T05:49:24.248Z"}
+{"level":"info","message":{"method":"POST","requestId":"b01df1b4-cc5c-481f-9750-38ec3e4d0cda","url":"/product/"},"timestamp":"2026-03-22T05:50:51.911Z"}
+{"level":"info","message":{"method":"POST","requestId":"80b191e9-ab7c-4aff-9dcb-8cc974d146f1","url":"/product/"},"timestamp":"2026-03-22T05:52:37.269Z"}
+{"level":"info","message":{"method":"POST","requestId":"a6266bfd-0785-43b2-95c4-53d3040506e0","url":"/product/"},"timestamp":"2026-03-22T05:56:38.670Z"}
+{"level":"info","message":{"method":"POST","requestId":"c34dfa15-453c-4e27-9a9a-e91ba46a7dbf","url":"/product/"},"timestamp":"2026-03-22T05:57:22.618Z"}
+{"level":"info","message":{"method":"POST","requestId":"211de376-b00d-41c4-b86f-c9eb310ebb25","url":"/product/"},"timestamp":"2026-03-22T05:58:11.234Z"}
+{"level":"info","message":{"method":"POST","requestId":"9bfd671b-ba7a-4a78-bd95-a482dc71ac4b","url":"/product/"},"timestamp":"2026-03-22T05:59:55.331Z"}
+{"level":"info","message":{"method":"POST","requestId":"5ae4b8d1-6563-4a99-bdae-f1a21c038f96","url":"/product/"},"timestamp":"2026-03-22T06:01:00.787Z"}
+{"level":"info","message":{"method":"GET","requestId":"dc559fd5-4224-472f-abde-cd76fc241f9b","url":"/uploads/1774159260798.jpg"},"timestamp":"2026-03-22T06:01:05.929Z"}
+{"level":"info","message":{"method":"POST","requestId":"224f2f7d-43b9-4eca-b60b-55ca86bcd891","url":"/product/"},"timestamp":"2026-03-22T06:02:34.871Z"}
+{"level":"info","message":{"method":"POST","requestId":"72e5275f-86fe-4e94-ab6c-c8341ed010e9","url":"/product/"},"timestamp":"2026-03-22T06:03:05.550Z"}
+{"level":"info","message":{"method":"GET","requestId":"5aa9bb0f-8e8f-438a-9740-45dada609ad0","url":"/uploads/1774159385559.jpg"},"timestamp":"2026-03-22T06:03:07.693Z"}
+{"level":"info","message":{"method":"POST","requestId":"b93a92ca-27a5-46f3-b901-e3e462bbdb3e","url":"/product/"},"timestamp":"2026-03-22T06:11:18.661Z"}
+{"level":"error","message":"Unexpected field","requestId":"b93a92ca-27a5-46f3-b901-e3e462bbdb3e","timestamp":"2026-03-22T06:11:18.698Z"}
+{"level":"info","message":{"method":"POST","requestId":"99305988-991b-4c08-8642-cef10f9c367c","url":"/product/"},"timestamp":"2026-03-22T06:12:00.866Z"}
+{"level":"error","message":"Unexpected field","requestId":"99305988-991b-4c08-8642-cef10f9c367c","timestamp":"2026-03-22T06:12:00.890Z"}
+{"level":"info","message":{"method":"POST","requestId":"3f311970-daa3-4b7b-b952-745009c4da32","url":"/product/"},"timestamp":"2026-03-22T06:16:47.229Z"}
+{"level":"info","message":{"method":"POST","requestId":"d6dee42a-4f56-4193-9784-cbdbc82f2e36","url":"/product/"},"timestamp":"2026-03-22T06:19:12.569Z"}
+{"level":"info","message":{"method":"POST","requestId":"7f03e8c3-e9b7-4410-af08-40b766306a69","url":"/product/"},"timestamp":"2026-03-22T06:22:45.259Z"}
+{"level":"error","message":"File too large","requestId":"7f03e8c3-e9b7-4410-af08-40b766306a69","timestamp":"2026-03-22T06:22:45.286Z"}
+{"level":"info","message":{"method":"POST","requestId":"4167ee5d-2542-4658-be60-8ef63d05fa6e","url":"/product/"},"timestamp":"2026-03-22T06:23:02.277Z"}
+{"level":"error","message":"File too large","requestId":"4167ee5d-2542-4658-be60-8ef63d05fa6e","timestamp":"2026-03-22T06:23:02.288Z"}
+{"level":"info","message":{"method":"POST","requestId":"2da23194-9980-4d03-9cfb-220ea5d38d06","url":"/product/"},"timestamp":"2026-03-22T06:23:11.968Z"}
+{"level":"error","message":"File too large","requestId":"2da23194-9980-4d03-9cfb-220ea5d38d06","timestamp":"2026-03-22T06:23:11.978Z"}
+{"level":"info","message":{"method":"POST","requestId":"54749131-fd8f-4adb-8d8b-1fcb535135c7","url":"/product/"},"timestamp":"2026-03-22T06:23:19.994Z"}
+{"level":"error","message":"File too large","requestId":"54749131-fd8f-4adb-8d8b-1fcb535135c7","timestamp":"2026-03-22T06:23:20.008Z"}
+{"level":"info","message":{"method":"POST","requestId":"57aa3048-0bb4-4387-b88b-8f38e03e050e","url":"/product/"},"timestamp":"2026-03-22T06:23:34.336Z"}
+{"level":"info","message":{"method":"GET","requestId":"d4805f78-77cf-4864-9e65-782bd434390e","url":"/uploads/$%7BimagePath%7D"},"timestamp":"2026-03-22T06:27:25.880Z"}
+{"level":"info","message":{"method":"GET","requestId":"92bc6711-fcec-4262-97a4-d87347c8b8e1","url":"/uploads/1774160352581.jpeg"},"timestamp":"2026-03-22T06:28:17.574Z"}

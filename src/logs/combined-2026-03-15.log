@@ -11,3 +11,6 @@
 {"level":"info","message":{"method":"GET","requestId":"aef0ce4a-d3ed-4706-a409-1c81a056ba60","url":"/product/69acff773e4f43d8186af1b6"},"timestamp":"2026-03-15T06:09:20.564Z"}
 {"level":"info","message":{"method":"GET","requestId":"70c20bf4-f86a-4e5b-bcb0-1dc031aceeaf","url":"/product/69acff773e4f43d8186af1b6"},"timestamp":"2026-03-15T06:11:40.914Z"}
 {"level":"info","message":{"method":"GET","requestId":"2747c129-1338-4520-8e63-510f71d26df4","url":"/product/69acff773e4f43d8186af1b6"},"timestamp":"2026-03-15T06:11:59.208Z"}
+{"level":"info","message":{"method":"GET","requestId":"e8c49a4b-5c88-49bd-aa20-acf18aa49356","url":"/product/69acff773e4f43d8186af1b6"},"timestamp":"2026-03-15T06:33:14.356Z"}
+{"level":"info","message":{"method":"POST","requestId":"d0c5e5ce-dfb7-4b1e-bf29-e20e9e615295","url":"/%7Dauth/login"},"timestamp":"2026-03-15T06:33:21.352Z"}
+{"level":"info","message":{"method":"POST","requestId":"befd45cf-796d-4c5e-b6b6-610321823ada","url":"/%7Dauth/login"},"timestamp":"2026-03-15T06:33:30.243Z"}

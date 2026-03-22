@@ -6,10 +6,24 @@ exports.getAllProducts = async (req, res) => {
 };
 
 exports.createProduct = async (req, res) => {
+  console.log(req.body);
   try {
-    const product = await productService.createProduct(req.body);
-    res.status(201).json(product);
+    const { description, title, id } = req.body;
+    const imagePath = req.files ? req.files.map((file) => file.filename) : null;
+    console.log(imagePath, "imagePath");
+    console.log(req.body, "req.body");
+    const product = await productService.createProduct({
+      id: Number(id),
+      title,
+      description,
+      image: "http://localhost:4000/uploads/" + imagePath
+    });
+    res.status(201).json({
+      ...product,
+      image: `http://localhost:4000/uploads/${imagePath}`
+    });
   } catch (error) {
+    console.log(error, "this is create product error");
     res.status(500).json({ error: error.message });
   }
 };

@@ -13,7 +13,7 @@ app.use(express.json());
 // middleware
 app.use(requestLogger);
 app.use("/auth", authRoutes);
-app.use(auth);
+// app.use(auth);
 // routes
 app.use("/product", productRoutes);
 

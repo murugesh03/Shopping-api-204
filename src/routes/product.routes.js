@@ -8,13 +8,6 @@ const upload = require("../middleware/upload.middleware");
 
 router.get("/", productController.getAllProducts);
 router.get("/:id", productController.getByProductId);
-// router.post(
-//   "/",
-//   authMiddleware,
-//   upload.single("image"),
-//   productController.createProduct
-// );
-router.post("/upload", upload.array("images", 5));
 router.post("/", upload.any(), productController.createProduct);
 router.post(
   "/:id",

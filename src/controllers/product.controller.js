@@ -1,5 +1,7 @@
 const productService = require("../services/product.service");
 const mongoose = require("mongoose");
+const s3Service = require("../services/s3.service");
+
 exports.getAllProducts = async (req, res) => {
   const products = await productService.getAllProducts(req.query);
   res.json(products);
@@ -8,19 +10,25 @@ exports.getAllProducts = async (req, res) => {
 exports.createProduct = async (req, res) => {
   console.log(req.body);
   try {
-    const { description, title, id } = req.body;
-    const imagePath = req.files ? req.files.map((file) => file.filename) : null;
-    console.log(imagePath, "imagePath");
+    const { description, title, id, folder } = req.body;
+    // const imagePath = req.files ? req.files.map((file) => file.filename) : null;
+    // console.log(imagePath, "imagePath");
+
+    const imageUrls = await Promise.all(
+      req.files.map((file) => s3Service.uploadToS3(file, folder))
+    );
+
+    console.log(imageUrls, "imageUrls");
     console.log(req.body, "req.body");
     const product = await productService.createProduct({
       id: Number(id),
       title,
       description,
-      image: "http://localhost:4000/uploads/" + imagePath
+      image: imageUrls // Assuming you want to use the first uploaded image URL
     });
     res.status(201).json({
       ...product,
-      image: `http://localhost:4000/uploads/${imagePath}`
+      image: imageUrls // Use the first uploaded image URL
     });
   } catch (error) {
     console.log(error, "this is create product error");

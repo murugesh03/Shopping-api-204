@@ -1,6 +1,32 @@
 const productService = require("../services/product.service");
 const mongoose = require("mongoose");
 const s3Service = require("../services/s3.service");
+const s3 = require("../config/s3");
+const { GetObjectCommand } = require("@aws-sdk/client-s3");
+const fs = require("fs");
+
+exports.streamS3Image = async (req, res) => {
+  try {
+    const { folder, fileName } = req.params;
+    const params = {
+      Bucket: process.env.AWS_BUCKET_NAME,
+      key: `${folder}/${fileName}`
+    };
+
+    const data = await s3.send(new GetObjectCommand(params));
+    res.setHeader("Content-Type", data.ContentType);
+    data.Body.on("data", (chunk) => {
+      console.log("chunk received", chunk.length);
+    });
+    data.Body.on("end", () => {
+      console.log("Stream ended");
+    });
+    data.Body.pipe(res);
+  } catch (error) {
+    console.error("Error occurred while streaming S3 image:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
 
 exports.getAllProducts = async (req, res) => {
   const products = await productService.getAllProducts(req.query);
@@ -13,9 +39,9 @@ exports.createProduct = async (req, res) => {
     const { description, title, id, folder } = req.body;
     // const imagePath = req.files ? req.files.map((file) => file.filename) : null;
     // console.log(imagePath, "imagePath");
-
+    console.log(req.files, "req.files");
     const imageUrls = await Promise.all(
-      req.files.map((file) => s3Service.uploadToS3(file, folder))
+      req.files.map((file) => s3Service.uploadLargeToS3(file, folder))
     );
 
     console.log(imageUrls, "imageUrls");

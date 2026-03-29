@@ -8,6 +8,7 @@ const upload = require("../middleware/upload.middleware");
 
 router.get("/", productController.getAllProducts);
 router.get("/:id", productController.getByProductId);
+router.get("/stream/:folder/:fileName", productController.streamS3Image);
 router.post("/", upload.any(), productController.createProduct);
 router.post(
   "/:id",
